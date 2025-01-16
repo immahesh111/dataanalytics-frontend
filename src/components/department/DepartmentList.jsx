@@ -18,7 +18,7 @@ const DepartmentList = () => {
     const fetchDepartments = async () => {
       setDepLoading(true)
         try{
-            const response = await axios.get('https://fatp-api.onrender.com/api/department', {
+            const response = await axios.get('https://dataanalytics-api.onrender.com/api/department', {
               headers:{
                 Authorization : `Bearer ${localStorage.getItem('token')}`
               }

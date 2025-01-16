@@ -8,7 +8,7 @@ const AdminSummary = () => {
   useEffect(() => {
     const fetchSummary = async () => {
       try{
-        const summary = await axios.get('https://fatp-api.onrender.com/api/dashboard/summary', {
+        const summary = await axios.get('https://dataanalytics-api.onrender.com/api/dashboard/summary', {
           headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
           }

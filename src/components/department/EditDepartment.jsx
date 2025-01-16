@@ -13,7 +13,7 @@ const EditDepartment = () => {
             
           setDepLoading(true)
             try{
-                const response = await axios.get(`https://fatp-api.onrender.com/api/department/${id}`,
+                const response = await axios.get(`https://dataanalytics-api.onrender.com/api/department/${id}`,
                      {
                   headers:{
                     Authorization : `Bearer ${localStorage.getItem('token')}`
@@ -45,7 +45,7 @@ const EditDepartment = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.put(`https://fatp-api.onrender.com/api/department/${id}`, department, {
+            const response = await axios.put(`https://dataanalytics-api.onrender.com/api/department/${id}`, department, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`
                 }

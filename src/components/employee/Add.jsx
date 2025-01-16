@@ -40,7 +40,7 @@ const Add = () => {
         });
     
         try {
-            const response = await axios.post('https://fatp-api.onrender.com/api/employee/add', formDataObj, {
+            const response = await axios.post('https://dataanalytics-api.onrender.com/api/employee/add', formDataObj, {
                 headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
             });
     
