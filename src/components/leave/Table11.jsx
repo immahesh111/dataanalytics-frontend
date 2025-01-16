@@ -9,10 +9,10 @@ const Table11 = () => {
     const [filteredLeaves, setFilteredLeaves] = useState(null)
     // Hardcoded list of approvers
     const approvers = [
-        { _id: '1', name: 'Rajini' },
-        { _id: '2', name: 'Kamal' },
-        { _id: '3', name: 'Aarya' },
-        { _id: '4', name: 'Simbu' }
+        { _id: '1', name: 'RajaGopal' },
+        { _id: '2', name: 'Kokila' },
+        
+        
     ];
 
     const fetchLeaves = async () => {
