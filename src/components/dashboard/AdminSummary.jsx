@@ -47,7 +47,7 @@ const AdminSummary = () => {
           <SummaryCard icon={<FaCheckCircle />} text="CheckSheet Approved" number={summary.leaveSummary.approved} color="bg-neon-green" />
           <SummaryCard icon={<FaHourglassHalf />} text="CheckSheet Pending" number={summary.leaveSummary.pending} color="bg-bright-yellow" />
           <SummaryCard icon={<FaTimesCircle />} text="CheckSheet Rejected" number={summary.leaveSummary.rejected} color="bg-bright-red" />
-
+          
 
         </div>
       </div>
