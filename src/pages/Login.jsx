@@ -16,7 +16,7 @@ const Login = () => {
         e.preventDefault()
        
         try{
-            const response = await axios.post("https://fatp-api.onrender.com/api/auth/login",
+            const response = await axios.post("https://dataanalytics-api.onrender.com/api/auth/login",
                 {email,password}
             );
             if(response.data.success){

@@ -26,7 +26,7 @@ export const DepartmentButtons = ({_id, onDepartmentDelete}) => {
         if (confirm) {
             try {
                 console.log("Attempting to delete department with ID:", id);
-                const response = await axios.delete(`https://fatp-api.onrender.com/api/department/${id}`, {
+                const response = await axios.delete(`https://dataanalytics-api.onrender.com/api/department/${id}`, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`
                     }

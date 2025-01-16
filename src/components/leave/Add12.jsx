@@ -70,7 +70,7 @@ const Add12 = () => {
         console.log("Submitting leave data:", leave); // Log leave data before submission
 
         try {
-            const response = await axios.post(`https://fatp-api.onrender.com/api/leave1/add`, leave, {
+            const response = await axios.post(`https://dataanalytics-api.onrender.com/api/leave11/add`, leave, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`
                 }

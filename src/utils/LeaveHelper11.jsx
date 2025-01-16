@@ -72,7 +72,7 @@ export const LeaveButtons = ({ row }) => {
 
     const handleExport = async () => {
         // Fetch the leave details to export
-        const response = await fetch(`https://fatp-api.onrender.com/api/leave11/detail/${row._id}`, {
+        const response = await fetch(`https://dataanalytics-api.onrender.com/api/leave11/detail/${row._id}`, {
             headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`
             }

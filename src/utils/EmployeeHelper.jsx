@@ -41,7 +41,7 @@ export const columns = [
 export const fetchDepartments = async () => {
   let departments
   try {
-    const response = await axios.get('https://fatp-api.onrender.com/api/department', {
+    const response = await axios.get('https://dataanalytics-api.onrender.com/api/department', {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`
       }
