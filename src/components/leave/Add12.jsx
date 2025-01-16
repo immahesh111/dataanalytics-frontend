@@ -20,9 +20,7 @@ const Add12 = () => {
             question6: '',
             question7: '',
             question8: '',
-            question9: '',
-            question10: '',
-            question11: '',
+            
         },
     });
 
@@ -88,7 +86,7 @@ const Add12 = () => {
 
     return (
         <div className='max-w-4xl mx-auto mt-10 bg-white p-8 rounded-md shadow-md'>
-            <h2 className='text-2xl font-bold mb-6'>DAILY MAINTENANCE CHECK SHEET FOR AUTO SCREWING MACHINE</h2>
+            <h2 className='text-2xl font-bold mb-6'>Data Analytics Check List</h2>
 
             <form onSubmit={handleSubmit}>
                 <div className='flex flex-col space-y-4'>
@@ -126,7 +124,7 @@ const Add12 = () => {
 
                     {/* Raw Material Storage Subdivision */}
                     <h3 className='text-lg font-bold cursor-pointer mt-4 p-2 border border-teal-500 bg-teal-100 rounded' onClick={() => setShowRawMaterialStorage(!showRawMaterialStorage)}>
-                    DAILY MAINTENANCE CHECK SHEET FOR AUTO SCREWING MACHINE
+                    Data Analytics Check List
                     </h3>
 
                     {showRawMaterialStorage && (
@@ -135,7 +133,7 @@ const Add12 = () => {
                             <tbody>
                                 {/* Question 1 */}
                                 <tr>
-                                    <td className="border border-gray-300 p-2 text-center">Check the ASM M/C Grounding  & Pneumatic Connections </td>
+                                    <td className="border border-gray-300 p-2 text-center">1.Hourly Monitoring on the OEE , Yield Dashboards updated on time & Verify the data shows if correct </td>
                                 
                                     <td className="border border-gray-300 p-3 text-center">
                                         <div className="flex flex-col items-center">
@@ -168,7 +166,7 @@ const Add12 = () => {
 
                                 {/* Question 2 */}
                                 <tr>
-                                    <td className="border border-gray-300 p-2 text-center">Check the Screw feeder top Cover</td>
+                                    <td className="border border-gray-300 p-2 text-center">2.Share the all Sector Yield and OEE Report in Whatsapp and verify the message </td>
                                     
                                     <td className="border border-gray-300 p-3 text-center">
                                         <div className="flex flex-col items-center">
@@ -202,7 +200,7 @@ const Add12 = () => {
                                 {/* Additional questions can be added here */}
                                 {/* Question 3 */}
                                 <tr>
-                                    <td className="border border-gray-300 p-2 text-center">Check the Machine 5S & Cleaning</td>
+                                    <td className="border border-gray-300 p-2 text-center">3.Share the all Sector NPM Report in Whatsapp and verify the message</td>
                                     
                                     <td className="border border-gray-300 p-3 text-center">
                                         <div className="flex flex-col items-center">
@@ -235,7 +233,7 @@ const Add12 = () => {
 
                                 {/* Question 4 */}
                                 <tr>
-                                    <td className="border border-gray-300 p-2 text-center">Check the Machine Safety cover</td>
+                                    <td className="border border-gray-300 p-2 text-center">4.Post message for better readability (e.g., Low Performance Line , Top Contributors , RCCA)</td>
                                     
                                     <td className="border border-gray-300 p-3 text-center">
                                         <div className="flex flex-col items-center">
@@ -267,7 +265,7 @@ const Add12 = () => {
 
                                 {/* Question 5 */}
                                 <tr>
-                                    <td className="border border-gray-300 p-2 text-center">Check the Emergency , Start & RST switch Function</td>
+                                    <td className="border border-gray-300 p-2 text-center">5.Keep an eye on the all the Dashboards and ensure the performance , if any abnormal escalate to DRI</td>
                                     
                                     <td className="border border-gray-300 p-3 text-center">
                                         <div className="flex flex-col items-center">
@@ -299,7 +297,7 @@ const Add12 = () => {
 
                                 {/* Question 6 */}
                                 <tr>
-                                    <td className="border border-gray-300 p-2 text-center">Check the Feeder Vibration should not be higher side</td>
+                                    <td className="border border-gray-300 p-2 text-center">6.Daily Morning collecting SPI data from the line </td>
                                     
                                     <td className="border border-gray-300 p-3 text-center">
                                         <div className="flex flex-col items-center">
@@ -331,7 +329,7 @@ const Add12 = () => {
 
                                 {/* Question 7 */}
                                 <tr>
-                                    <td className="border border-gray-300 p-2 text-center">Feeder & Driver should be as placed in right orientation</td>
+                                    <td className="border border-gray-300 p-2 text-center">7.Daily Audit for the Temperature and humidity sensor working condition</td>
                                     
                                     <td className="border border-gray-300 p-3 text-center">
                                         <div className="flex flex-col items-center">
@@ -363,7 +361,7 @@ const Add12 = () => {
 
                                 {/* Question 8 */}
                                 <tr>
-                                    <td className="border border-gray-300 p-2 text-center">Nozzle size should be as per screw specification</td>
+                                    <td className="border border-gray-300 p-2 text-center">8.Updating Weekly Review Report Excel sheet for Engineering Review daily without fail</td>
                                     
                                     <td className="border border-gray-300 p-3 text-center">
                                         <div className="flex flex-col items-center">
@@ -393,103 +391,7 @@ const Add12 = () => {
                                     </td>
                                 </tr>
 
-                                {/* Question 9 */}
-                                <tr>
-                                    <td className="border border-gray-300 p-2 text-center">Check the screw driver always enabled for forward operation</td>
-                                    
-                                    <td className="border border-gray-300 p-3 text-center">
-                                        <div className="flex flex-col items-center">
-                                            <label className="inline-flex items-center">
-                                                <input
-                                                    type="radio"
-                                                    name="rawMaterialStorage.question9"
-                                                    value="Yes"
-                                                    onChange={handleChange}
-                                                    className="form-radio h-4 w-4 text-blue-600"
-                                                    required
-                                                />
-                                                Yes
-                                            </label>
-                                            <label className="inline-flex items-center mt-2">
-                                                <input
-                                                    type="radio"
-                                                    name="rawMaterialStorage.question9"
-                                                    value="No"
-                                                    onChange={handleChange}
-                                                    className="form-radio h-4 w-4 text-blue-600"
-                                                    required
-                                                />
-                                                No
-                                            </label>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                                {/* Question 10 */}
-                                <tr>
-                                    <td className="border border-gray-300 p-2 text-center">Check the M/C X,Y & Z Axis teaching as per model specific.</td>
-                                    
-                                    <td className="border border-gray-300 p-3 text-center">
-                                        <div className="flex flex-col items-center">
-                                            <label className="inline-flex items-center">
-                                                <input
-                                                    type="radio"
-                                                    name="rawMaterialStorage.question10"
-                                                    value="Yes"
-                                                    onChange={handleChange}
-                                                    className="form-radio h-4 w-4 text-blue-600"
-                                                    required
-                                                />
-                                                Yes
-                                            </label>
-                                            <label className="inline-flex items-center mt-2">
-                                                <input
-                                                    type="radio"
-                                                    name="rawMaterialStorage.question10"
-                                                    value="No"
-                                                    onChange={handleChange}
-                                                    className="form-radio h-4 w-4 text-blue-600"
-                                                    required
-                                                />
-                                                No
-                                            </label>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                                {/* Question 11 */}
-                                <tr>
-                                    <td className="border border-gray-300 p-2 text-center">If found defective, describe the issues & Inform to Shift Incharge.</td>
-                                    
-                                    <td className="border border-gray-300 p-3 text-center">
-                                        <div className="flex flex-col items-center">
-                                            <label className="inline-flex items-center">
-                                                <input
-                                                    type="radio"
-                                                    name="rawMaterialStorage.question11"
-                                                    value="Yes"
-                                                    onChange={handleChange}
-                                                    className="form-radio h-4 w-4 text-blue-600"
-                                                    required
-                                                />
-                                                Yes
-                                            </label>
-                                            <label className="inline-flex items-center mt-2">
-                                                <input
-                                                    type="radio"
-                                                    name="rawMaterialStorage.question11"
-                                                    value="No"
-                                                    onChange={handleChange}
-                                                    className="form-radio h-4 w-4 text-blue-600"
-                                                    required
-                                                />
-                                                No
-                                            </label>
-                                        </div>
-                                    </td>
-                                </tr>
-
-
+                                
                             </tbody>
                         </table>
                     )}

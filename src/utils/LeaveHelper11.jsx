@@ -113,76 +113,57 @@ export const LeaveButtons = ({ row }) => {
                 
                 <tbody>
                      <tr>
-                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">Check the ASM M/C Grounding  & Pneumatic Connections</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">1.Hourly Monitoring on the OEE , Yield Dashboards updated on time & Verify the data shows if correct</td>
                             
                             <td style="border: 1px solid #000; padding: 8px; text-align: center;">${leaveDetails.rawMaterialStorage?.question1 || 'Not answered'}</td>
                         </tr>
                         <tr>
-                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">Check the Screw feeder top Cover</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">2.Share the all Sector Yield and OEE Report in Whatsapp and verify the message </td>
                             
                             <td style="border: 1px solid #000; padding: 8px; text-align: center;">${leaveDetails.rawMaterialStorage?.question2 || 'Not answered'}</td>
                         </tr>
                         <tr>
-                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">Check the Machine 5S & Cleaning</td>
+                            <td style="border: 1px solid #000; padding: 8px; text-align: center;">3.Share the all Sector NPM Report in Whatsapp and verify the message</td>
                             
                             <td style="border: 1px solid #000; padding: 8px; text-align: center;">${leaveDetails.rawMaterialStorage?.question3 || 'Not answered'}</td>
                         </tr>
                         <tr>
                     <!-- Question 4 -->
                     <tr>
-                        <td style="border: 1px solid #000; padding: 8px; text-align: center;">Check the Machine Safety cover</td>
+                        <td style="border: 1px solid #000; padding: 8px; text-align: center;">4.Post message for better readability (e.g., Low Performance Line , Top Contributors , RCCA)</td>
                         
                         <td style="border: 1px solid #000; padding: 8px; text-align:center">${leaveDetails.rawMaterialStorage?.question4 || 'Not answered'}</td>
                     </tr>
         
                     <!-- Question 5 -->
                     <tr>
-                        <td style="border: 1px solid #000; padding: 8px; text-align:center">Check the Emergency , Start & RST switch Function</td>
+                        <td style="border: 1px solid #000; padding: 8px; text-align:center">5.Keep an eye on the all the Dashboards and ensure the performance , if any abnormal escalate to DRI</td>
                         
                         <td style="border: 1px solid #000; padding: 8px; text-align:center">${leaveDetails.rawMaterialStorage?.question5 || 'Not answered'}</td>
                     </tr>
 
                     <!-- Question 6 -->
                     <tr>
-                        <td style="border: 1px solid #000; padding: 8px; text-align:center">Check the Feeder Vibration should not be higher side</td>
+                        <td style="border: 1px solid #000; padding: 8px; text-align:center">6.Daily Morning collecting SPI data from the line </td>
                         
                         <td style="border: 1px solid #000; padding: 8px; text-align:center">${leaveDetails.rawMaterialStorage?.question6 || 'Not answered'}</td>
                     </tr>
 
                     <!-- Question 7 -->
                     <tr>
-                        <td style="border: 1px solid #000; padding: 8px; text-align:center">Feeder & Driver should be as placed in right orientation</td>
+                        <td style="border: 1px solid #000; padding: 8px; text-align:center">7.Daily Audit for the Temperature and humidity sensor working condition</td>
                         
                         <td style="border: 1px solid #000; padding: 8px; text-align:center">${leaveDetails.rawMaterialStorage?.question7 || 'Not answered'}</td>
                     </tr>
 
                     <!-- Question 8 -->
                     <tr>
-                        <td style="border: 1px solid #000; padding: 8px; text-align:center">Nozzle size should be as per screw specification</td>
+                        <td style="border: 1px solid #000; padding: 8px; text-align:center">8.Updating Weekly Review Report Excel sheet for Engineering Review daily without fail</td>
                         
                         <td style="border: 1px solid #000; padding: 8px; text-align:center">${leaveDetails.rawMaterialStorage?.question8 || 'Not answered'}</td>
                     </tr>
 
-                    <!-- Question 9 -->
-                    <tr>
-                        <td style="border: 1px solid #000; padding: 8px; text-align:center">Check the screw driver always enabled for forward operation</td>
-                        
-                        <td style="border: 1px solid #000; padding: 8px; text-align:center">${leaveDetails.rawMaterialStorage?.question9 || 'Not answered'}</td>
-                    </tr>
-
-                    <!-- Question 10 -->
-                    <tr>
-                        <td style="border: 1px solid #000; padding: 8px; text-align:center">Check the M/C X,Y & Z Axis teaching as per model specific.</td>
-                        
-                        <td style="border: 1px solid #000; padding: 8px; text-align:center">${leaveDetails.rawMaterialStorage?.question10 || 'Not answered'}</td>
-                    </tr>
-                    
-                    <!-- Question 11 -->
-                     <tr>
-                        <td style="border: 1px solid #000; padding: 8px; text-align:center">If found defective, describe the issues & Inform to Shift Incharge.</td>
-                        
-                        <td style="border: 1px solid #000; padding: 8px; text-align:center">${leaveDetails.rawMaterialStorage?.question11 || 'Not answered'}</td>
-                    </tr>
+                   
                     
                 </tbody>
             </table>

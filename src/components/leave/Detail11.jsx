@@ -10,10 +10,8 @@ const Detail11 = () => {
 
     // Hardcoded list of approvers
     const approvers = [
-        { _id: '1', name: 'Rajini' },
-        { _id: '2', name: 'Kamal' },
-        { _id: '3', name: 'Aarya' },
-        { _id: '4', name: 'Simbu' }
+        { _id: '1', name: 'RajaGopal' },
+        { _id: '2', name: 'Kokila' },
     ];
 
     useEffect(() => {
@@ -129,13 +127,13 @@ const Detail11 = () => {
                             {/* Display Raw Material Storage Questions and Answers */}
                             {leave.rawMaterialStorage && (
                                 <div className="border-t border-b pt-4 pb-4">
-                                    <h3 className="text-lg font-bold mb-4">DAILY MAINTENANCE CHECK SHEET FOR AUTO SCREWING MACHINE</h3>
+                                    <h3 className="text-lg font-bold mb-4">Data Analytics Checksheet</h3>
                                     <table className="min-w-full border-collapse border border-gray-300">
                                         
                                         <tbody>
                                             {/* Question 1 */}
                                             <tr>
-                                                <td className="border border-gray-300 p-2 text-center">Check the ASM M/C Grounding  & Pneumatic Connections</td>
+                                                <td className="border border-gray-300 p-2 text-center">1.Hourly Monitoring on the OEE , Yield Dashboards updated on time & Verify the data shows if correct</td>
                                                 
                                                 <td className="border border-gray-300 p-2 text-center">
                                                     {leave.rawMaterialStorage.question1 || 'Not answered'}
@@ -144,7 +142,7 @@ const Detail11 = () => {
 
                                             {/* Question 2 */}
                                             <tr>
-                                                <td className="border border-gray-300 p-2 text-center">Check the Screw feeder top Cover</td>
+                                                <td className="border border-gray-300 p-2 text-center">2.Share the all Sector Yield and OEE Report in Whatsapp and verify the message </td>
                                                 
                                                 <td className="border border-gray=300 p=2 text-center">
                                                     {leave.rawMaterialStorage.question2 || 'Not answered'}
@@ -153,7 +151,7 @@ const Detail11 = () => {
 
                                             {/* Question 3 */}
                                             <tr>
-                                                <td className="border border-gray=300 p=2 text-center">Check the Machine 5S & Cleaning</td>
+                                                <td className="border border-gray=300 p=2 text-center">3.Share the all Sector NPM Report in Whatsapp and verify the message</td>
                                                 
                                                 <td className="border border-gray=300 p=2 text-center">
                                                     {leave.rawMaterialStorage.question3 || 'Not answered'}
@@ -162,7 +160,7 @@ const Detail11 = () => {
 
                                             {/* Question 4 */}
                                             <tr>
-                                                <td className="border border-gray=300 p=2 text-center">Check the Machine Safety cover</td>
+                                                <td className="border border-gray=300 p=2 text-center">4.Post message for better readability (e.g., Low Performance Line , Top Contributors , RCCA)</td>
                                                 
                                                 <td className="border border-gray=300 p=2 text-center">
                                                     {leave.rawMaterialStorage.question4 || 'Not answered'}
@@ -171,7 +169,7 @@ const Detail11 = () => {
 
                                             {/* Question 5 */}
                                             <tr>
-                                                <td className="border border-gray=300 p=2 text-center">Check the Emergency , Start & RST switch Function</td>
+                                                <td className="border border-gray=300 p=2 text-center">5.Keep an eye on the all the Dashboards and ensure the performance , if any abnormal escalate to DRI</td>
                                                 
                                                 <td className="border border-gray=300 p=2 text-center">
                                                     {leave.rawMaterialStorage.question5 || 'Not answered'}
@@ -180,7 +178,7 @@ const Detail11 = () => {
 
                                             {/* Question 6 */}
                                             <tr>
-                                                <td className="border border-gray=300 p=2 text-center">Check the Feeder Vibration should not be higher side</td>
+                                                <td className="border border-gray=300 p=2 text-center">6.Daily Morning collecting SPI data from the line </td>
                                                 
                                                 <td className="border border-gray=300 p=2 text-center">
                                                     {leave.rawMaterialStorage.question6 || 'Not answered'}
@@ -189,7 +187,7 @@ const Detail11 = () => {
 
                                             {/* Question 7 */}
                                             <tr>
-                                                <td className="border border-gray=300 p=2 text-center">Feeder & Driver should be as placed in right orientation</td>
+                                                <td className="border border-gray=300 p=2 text-center">7.Daily Audit for the Temperature and humidity sensor working condition</td>
                                                 
                                                 <td className="border border-gray=300 p=2 text-center">
                                                     {leave.rawMaterialStorage.question7 || 'Not answered'}
@@ -198,39 +196,14 @@ const Detail11 = () => {
 
                                             {/* Question 8 */}
                                             <tr>
-                                                <td className="border border-gray=300 p=2 text-center">Nozzle size should be as per screw specification</td>
+                                                <td className="border border-gray=300 p=2 text-center">8.Updating Weekly Review Report Excel sheet for Engineering Review daily without fail</td>
                                                 
                                                 <td className="border border-gray=300 p=2 text-center">
                                                     {leave.rawMaterialStorage.question8 || 'Not answered'}
                                                 </td>
                                                 </tr>
 
-                                            {/* Question 9 */}
-                                            <tr>
-                                                <td className="border border-gray=300 p=2 text-center">Check the screw driver always enabled for forward operation</td>
-                                                
-                                                <td className="border border-gray=300 p=2 text-center">
-                                                    {leave.rawMaterialStorage.question9 || 'Not answered'}
-                                                </td>
-                                                </tr>
-
-                                            {/* Question 10 */}
-                                            <tr>
-                                                <td className="border border-gray=300 p=2 text-center">Check the M/C X,Y & Z Axis teaching as per model specific.</td>
-                                                
-                                                <td className="border border-gray=300 p=2 text-center">
-                                                    {leave.rawMaterialStorage.question10 || 'Not answered'}
-                                                </td>
-                                                </tr>
-
-                                            {/* Question 11 */}
-                                            <tr>
-                                                <td className="border border-gray=300 p=2 text-center">If found defective, describe the issues & Inform to Shift Incharge.</td>
-                                                
-                                                <td className="border border-gray=300 p=2 text-center">
-                                                    {leave.rawMaterialStorage.question11 || 'Not answered'}
-                                                </td>
-                                                </tr>
+                                            
 
                                         </tbody>
                                     </table>
