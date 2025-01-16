@@ -19,7 +19,7 @@ const Detail11 = () => {
     useEffect(() => {
         const fetchLeave = async () => {
             try {
-                const response = await axios.get(`https://fatp-api.onrender.com/api/leave11/detail/${id}`, {
+                const response = await axios.get(`https://fatp-api.onrender.com/api/leave1/detail/${id}`, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`
                     }
@@ -40,7 +40,7 @@ const Detail11 = () => {
     }, [id]);
     const changeStatus = async (id, status) => {
         try {
-            const response = await axios.put(`https://fatp-api.onrender.com/api/leave11/${id}`, { status, approver: selectedApprover }, {
+            const response = await axios.put(`https://fatp-api.onrender.com/api/leave1/${id}`, { status, approver: selectedApprover }, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`
                 }
